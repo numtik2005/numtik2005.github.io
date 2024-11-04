@@ -13,7 +13,7 @@ async function login() {
     const response = await fetch('https://script.google.com/macros/s/AKfycby1_yGH8I69tmADLyjUK9nprpWM-rOAs6D93eJ8pwUty7T3iqU9spsAzh8LoX9rA7St/exec');   // exec ของ appscript
     const users = await response.json();
 
-    const user = users.find(u => u['ชื่อผู้ใช้'] === usernameMD5 && u['รหัสผ่าน'] === passwordMD5);
+    const user = users.find(u => u['username'] === usernameMD5 && u['password'] === passwordMD5);
 
     if (user) {
         document.getElementById('login-container').style.display = 'none';
