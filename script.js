@@ -1,5 +1,5 @@
 let githubUser = 'numtik2005'           // user name
-let repo = 'numtik2005.github.io '      // repo
+let repo = 'numtik2005.github.io'      // repo
 let imgFolder = 'img-upload'            // folder เก็บรูป
 
 async function login() {
